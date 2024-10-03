@@ -11,7 +11,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ title, subTitle, img }) => {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col w-[300px] md:w-[390px] h-[240px]">
+    <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col w-[300px] lg:w-[390px] h-[240px]">
       <div className="text-4xl text-teal-500 mb-4 shadow-lg w-[40px] h-[40px] flex justify-center rounded-lg items-center">
         <Image src={img || defaultImage} width={20} height={20} alt="Logo" />
       </div>

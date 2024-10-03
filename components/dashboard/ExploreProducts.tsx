@@ -41,7 +41,7 @@ const ExploreProducts = () => {
             biscuit ice cream. Cupcake tootsie roll sugar plum danish pudding
             fruitcake cheesecake.
           </p>
-          <div className="flex md:justify-center mt-4 uppercase">
+          <div className="flex lg:justify-center mt-4 uppercase">
             <ButtonFullRounded title={"Explore Now"} />
           </div>
         </div>

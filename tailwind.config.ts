@@ -44,6 +44,9 @@ const config: Config = {
         'custom-shadow': '4px 4px 32px 0px #00000014',
       }
     },
+    screens: {
+      'lg': '1280px',
+    }
   },
   plugins: [],
 };

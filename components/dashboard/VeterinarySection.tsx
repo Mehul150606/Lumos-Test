@@ -35,17 +35,17 @@ const VeterinarySection = () => {
         <h4 className="text-sm uppercase font-medium text-[16px] leading-[24px] tracking-[0.02em] mb-5 text-black-300 opacity-50">
           Based on Veterinary Doctor's
         </h4>
-        <h2 className="text-3xl font-medium text-[30px] leading-[45px] text-black-300 px-2 md:px-80">
+        <h2 className="text-3xl font-medium lg:text-[30px] lg:leading-[45px] text-[16px] leading-[24px] text-black-300 px-14 lg:px-[370px]">
           Some Of Our Favourites To Care For Their Whole Health
         </h2>
       </div>
 
-      <div className="hidden md:flex justify-center space-x-8 mb-8 border border-slate-300 rounded-lg p-2">
+      <div className="hidden lg:flex justify-center space-x-8 mb-8 border border-slate-300 rounded-lg p-2">
         {tabs.map((tab) => (
           <button
             key={tab.name}
             onClick={() => setActiveTab(tab.name)}
-            className={`flex flex-col md:flex-row items-center px-12 py-2 rounded-full font-medium text-sm capitalize space-x-2 ${
+            className={`flex flex-col lg:flex-row items-center px-12 py-2 rounded-full font-medium text-sm capitalize space-x-2 ${
               activeTab === tab.name ? "bg-[#112025] text-[#EFF0F4]" : ""
             }`}
           >
@@ -71,12 +71,12 @@ const VeterinarySection = () => {
         ))}
       </div>
 
-      <div className="flex md:hidden justify-between overflow-auto w-full mb-5 px-5">
+      <div className="flex lg:hidden justify-between overflow-auto w-full mb-5 px-5">
         {tabs.map((tab, index) => (
           <button
           key={index+1}
             onClick={() => setActiveTab(tab.name)}
-            className={`flex flex-col justify-center items-center py-2.5 px-5 md:rounded rounded-xl ${
+            className={`flex flex-col justify-center items-center py-2.5 px-5 lg:rounded rounded-xl ${
               activeTab === tab.name ? "bg-[#112025]" : "bg-gray-50"
             } `}
           >
@@ -104,7 +104,7 @@ const VeterinarySection = () => {
 
       {activeTab === "dog" && (
         <>
-          <div className="hidden md:flex flex-col lg:flex-row gap-6">
+          <div className="hidden lg:flex flex-col lg:flex-row gap-6">
             <div className="flex-auto w-[40%] relative">
               <div className="rounded-lg overflow-hidden relative min-h-[546px] bg-[url('/images/MaskGroup.png')]">
                 <div className="absolute top-4 left-4 text-black-300 p-2 rounded mt-8">
@@ -172,7 +172,7 @@ const VeterinarySection = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:hidden flex-col">
+          <div className="flex lg:hidden flex-col">
             <div ref={sliderRef} className="keen-slider">
               <div className="keen-slider__slide flex-auto relative">
                 <div className="rounded-lg overflow-hidden relative min-h-[546px] bg-[url('/images/MaskGroup.png')]">
@@ -243,7 +243,7 @@ const VeterinarySection = () => {
               </div>
             </div>
             {loaded && instanceRef.current && (
-              <div className="flex justify-center mt-5 space-x-2 pl-5 md:pl-0">
+              <div className="flex justify-center mt-5 space-x-2 pl-5 lg:pl-0">
                 {[
                   ...Array(
                     instanceRef.current.track.details.slides.length
@@ -266,7 +266,7 @@ const VeterinarySection = () => {
       )}
 
       {activeTab === "cat" && (
-        <div className="hidden md:flex flex-col lg:flex-row gap-6">
+        <div className="hidden lg:flex flex-col lg:flex-row gap-6">
           <div className="flex-auto w-64 relative">
             <div className="rounded-lg overflow-hidden relative min-h-[546px] bg-[url('/images/MaskGroup.png')]">
               <div className="absolute top-4 left-4  text-black-300 p-2 rounded mt-8">

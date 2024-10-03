@@ -42,10 +42,10 @@ const Footer: React.FC = () => {
           }
         }
       `}</style>
-      <div className=" container mx-auto py-10 px-0 md:py-16 md:px-20 relative z-[999]">
-        <div className="flex justify-between flex-col md:flex-row gap-8 px-5 lg:px-0">
+      <div className=" container mx-auto py-10 px-0 lg:py-16 lg:px-20 relative z-[999]">
+        <div className="flex justify-between flex-col lg:flex-row gap-8 px-5 lg:px-0">
           <div className="flex justify-between gap-[50px]">
-            <div className="flex-none w-full md:w-1/3">
+            <div className="flex-none w-full lg:w-1/3">
               <Image src={Logo} width={190} height={50} alt="Logo" />
               <p className="text-green-200 mt-4 font-medium text-[12px] leading-[18px] tracking-[0.02em]">
                 © 2021 PetStore. All Rights Reserved.
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
                 placerat elit a enim fermentum ac integer eget ante mattis
                 cursus purus volutpat
               </p>
-              <div className="mt-4 text-black-300 hidden md:block font-semibold text-[16px] leading-[24px]">
+              <div className="mt-4 text-black-300 hidden lg:block font-semibold text-[16px] leading-[24px]">
                 <p className="font-bold flex mb-3 items-center">
                   <Image src={Mail} alt="Logo" className="mr-2 w-4 h-3" />
                   Sayhi@Dubidoo.Com
@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                   (252) 555-0126
                 </p>
               </div>
-              <div className="block md:hidden mt-5">
+              <div className="block lg:hidden mt-5">
                 <h3 className="font-bold text-[22px] leading-[33px] text-green-50">
                   Social Media
                 </h3>
@@ -102,7 +102,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
 
-            <div className="hidden flex-none w-1/4 md:block">
+            <div className="hidden flex-none w-1/4 lg:block">
               <h3 className="font-bold text-[22px] leading-[33px] text-green-50">
                 Our Service
               </h3>
@@ -122,7 +122,7 @@ const Footer: React.FC = () => {
               </ul>
             </div>
 
-            <div className="hidden flex-1 md:block">
+            <div className="hidden flex-1 lg:block">
               <h3 className="font-bold text-[22px] leading-[33px] text-green-50">
                 Pet Wise Food
               </h3>
@@ -155,7 +155,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button
               onClick={() => setShowServices(!showServices)}
               className="w-full flex justify-between items-center px-4 py-3 bg-white border border-gray-300 rounded-md text-gray-900 shadow-sm"
@@ -221,7 +221,7 @@ const Footer: React.FC = () => {
               </div>
             )}
           </div>
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <h3 className="font-bold text-[22px] leading-[33px] text-green-50 w-max">
               Social Media
             </h3>
@@ -257,7 +257,7 @@ const Footer: React.FC = () => {
             </div>
           </div>
 
-          <div className="mt-4 text-gray-900 flex justify-between items-center md:hidden">
+          <div className="mt-4 text-gray-900 flex justify-between items-center lg:hidden">
             <p className="font-bold flex items-center">
               <Image src={Mail} className="mr-2 w-4 h-3" alt="Logo" />
               Sayhi@Dubidoo.Com
@@ -271,7 +271,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-teal-800 text-white text-center py-4 text-xs md:text-base">
+      <div className="bg-teal-800 text-white text-center py-4 text-xs lg:text-base">
         <ul className="flex justify-center space-x-6">
           <li className="cursor-pointer hover:underline">Privacy Policy</li>
           <li className="cursor-pointer hover:underline w-[1px] bg-white"></li>

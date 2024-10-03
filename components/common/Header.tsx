@@ -14,8 +14,8 @@ const Header: React.FC = () => {
     <div>
       <NotificationSlider />
 
-      <div className="bg-white flex items-center justify-between py-5 px-6 md:px-20 shadow-md">
-        <div className="md:hidden">
+      <div className="bg-white flex items-center justify-between py-5 px-6 lg:px-20 shadow-md">
+        <div className="lg:hidden">
           <Image
             src={FaBars}
             width={24}
@@ -25,17 +25,17 @@ const Header: React.FC = () => {
           />
         </div>
 
-        <div className="text-center md:text-left">
+        <div className="text-center lg:text-left">
           <Image
             src={Logo}
             width={190}
             height={50}
             alt="Logo"
-            className="mx-auto md:m-0"
+            className="mx-auto lg:m-0"
           />
         </div>
 
-        <div className="hidden md:flex items-center space-x-8 text-lg text-black-300 ml-6 font-semibold text-[22px] leading-[33px]">
+        <div className="hidden lg:flex items-center space-x-8 text-lg text-black-300 ml-6 font-semibold text-[22px] leading-[33px]">
           <div className="flex items-center cursor-pointer hover:text-teal-500">
             Pets Food{" "}
             <span className="ml-2">
@@ -62,7 +62,7 @@ const Header: React.FC = () => {
           </div>
         </div>
 
-        <div className="hidden md:flex items-center mx-6 flex-grow max-w-[547px]">
+        <div className="hidden lg:flex items-center mx-6 flex-grow max-w-[547px]">
           <div className="relative w-full max-w-[547px]">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               <Image
@@ -75,14 +75,14 @@ const Header: React.FC = () => {
             </div>
             <input
               type="text"
-              className="w-full pl-10 pr-4 py-3 border rounded-md bg-gray-50 text-black-300 focus:outline-none font-semibold text-[16px] leading-[24px] placeholder:text-black-300 opacity-50"
+              className="w-full pl-10 pr-4 py-3 border border-[#11202514] rounded-md bg-gray-50 text-black-300 focus:outline-none font-semibold text-[16px] leading-[24px] placeholder:text-black-300 opacity-50"
               placeholder="Search For Product"
             />
           </div>
         </div>
 
-        <div className="flex items-center space-x-4 md:space-x-6">
-          <div className="rounded-full bg-gray-50 p-2 hidden md:flex">
+        <div className="flex items-center space-x-4 lg:space-x-6">
+          <div className="rounded-full bg-gray-50 p-2 hidden lg:flex">
             <Image
               src={Heart}
               width={25}
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
               className="cursor-pointer"
             />
           </div>
-          <div className="rounded-full bg-gray-50 p-2 hidden md:flex">
+          <div className="rounded-full bg-gray-50 p-2 hidden lg:flex">
             <Image
               src={User}
               width={25}
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
               className="cursor-pointer"
             />
           </div>
-          <div className="relative rounded-full md:bg-gray-50 p-2">
+          <div className="relative rounded-full lg:bg-gray-50 p-2">
             <Image
               src={Bag}
               width={25}
@@ -115,8 +115,8 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white px-4 py-3 shadow-md md:hidden">
-        <div className="relative w-full max-w-md">
+      <div className="bg-white px-4 pt-3 pb-4 shadow-md lg:hidden">
+        <div className="relative w-full">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
             <Image
               src={Search}
@@ -128,7 +128,7 @@ const Header: React.FC = () => {
           </div>
           <input
             type="text"
-            className="w-full pl-10 pr-4 py-3 border rounded-3xl bg-gray-50 text-black-300 focus:outline-none placeholder:text-black-300 opacity-50"
+            className="w-full pl-10 pr-4 py-3 rounded-3xl bg-gray-50 text-black-300 focus:outline-none placeholder:text-black-300 opacity-50 font-semibold text-[12px] leading-[18px]"
             placeholder="Search For Product"
           />
         </div>

@@ -136,3 +136,11 @@ input[type="checkbox"].custom-checkbox:checked:after {
   width: 15px;
   height: 15px;
 }
+
+@media screen and (max-width: 769px) {
+
+.slider-container .slick-dots li {
+    width: 5px !important;
+    height: 5px !important;
+  }
+}

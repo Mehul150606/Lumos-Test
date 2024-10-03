@@ -19,7 +19,7 @@ export const ButtonFullRounded: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`${className} bg-black-300 float-left text-[12px] md:text-[14px] text-[#EFF0F4] px-4 py-2 mt-3 rounded-full font-medium transition`}
+      className={`${className} bg-black-300 float-left text-[12px] lg:text-[14px] text-[#EFF0F4] px-4 py-2 mt-3 rounded-full font-medium transition`}
     >
       {title}
     </button>
@@ -29,7 +29,7 @@ export const ButtonFullRounded: React.FC<ButtonProps> = ({
 export const ButtonOutline: React.FC<ButtonProps> = ({ title, className }) => {
   return (
     <button
-      className={`${className} text-[12px] md:text-[14px] text-black-300 px-4 py-2 mt-3 font-medium transition border border-solid border-black-300 `}
+      className={`${className} text-[12px] lg:text-[14px] text-black-300 px-4 py-2 mt-3 font-medium transition border border-solid border-black-300 `}
     >
       {title}
     </button>

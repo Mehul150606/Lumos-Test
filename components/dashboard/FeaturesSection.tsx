@@ -6,9 +6,9 @@ import FeatureCard from '../common/FeatureCard';
 
 const FeaturesSection = () => {
   return (
-    <div className='bg-blue-50 feature-bg py-10 md:py-16'>
+    <div className='bg-blue-50 feature-bg py-10 lg:py-16'>
       <div className='container mx-auto px-4 overflow-x-auto w-full'>
-        <div className='inline-flex md:flex md:flex-row justify-center space-x-6 md:space-y-0 md:space-x-6 ml-4 mr-6'>
+        <div className='inline-flex lg:flex lg:flex-row justify-center space-x-6 lg:space-y-0 lg:space-x-6 ml-4 mr-6'>
           <FeatureCard
             title='Fresh Product'
             subTitle='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis

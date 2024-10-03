@@ -10,7 +10,7 @@ import ExploreCard from "../common/ExploreCard";
 
 const ExplorePostSection = () => {
   return (
-    <div className="bg-white py-16 px-6 md:px-20">
+    <div className="bg-white py-16 px-6 lg:px-20">
       <div className="container mx-auto">
         <h2 className="text-center font-medium text-[30px] leading-[45px] text-gray-800 mb-4">
           Explore #Dubidoo
@@ -20,10 +20,10 @@ const ExplorePostSection = () => {
           caption on Instagram or Twitter to be featured on our website.
         </p>
         <div className="overflow-x-auto w-full sm:overflow-visible">
-          <div className="inline-flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="inline-flex lg:grid lg:grid-cols-2 lg:grid-cols-4 gap-6">
             <ExploreCard img={Reactangle3} />
-            <div className="hidden md:block">
-              <div className="hidden bg-white rounded-lg overflow-hidden  md:flex flex-col justify-center">
+            <div className="hidden lg:block">
+              <div className="hidden bg-white rounded-lg overflow-hidden  lg:flex flex-col justify-center">
                 <div className="py-8 px-4 bg-[#195F6B29]">
                   <Image
                     src={Heart}
@@ -58,7 +58,7 @@ const ExplorePostSection = () => {
 
             <ExploreCard img={Reactangle1} />
 
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <ExploreCard img={Reactangle} />
             </div>
           </div>

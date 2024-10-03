@@ -14,7 +14,7 @@ const ExploreCard: React.FC<ExploreCardProps> = ({
   multiData = false,
 }) => {
   return (
-    <div className="bg-white rounded-lg overflow-hidden flex flex-col w-[300px] md:w-full">
+    <div className="bg-white rounded-lg overflow-hidden flex flex-col w-[300px] lg:w-full">
       <Image
         src={img || defaultImage}
         alt="Post Image"

@@ -19,7 +19,7 @@ const NotificationSlider = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`${className} custom-arrow !right-[50px] md:!right-[450px] !top-[65%]`}
+        className={`${className} custom-arrow !right-[50px] lg:!right-[450px] !top-[65%]`}
         style={{ ...style, display: "block" }}
         onClick={onClick}
       >
@@ -32,7 +32,7 @@ const NotificationSlider = () => {
     const { className, style, onClick } = props;
     return (
       <div
-        className={`${className} custom-arrow !left-[50px] md:!left-[450px] !top-[65%]`}
+        className={`${className} custom-arrow !left-[50px] lg:!left-[450px] !top-[65%]`}
         style={{ ...style, display: "block" }}
         onClick={onClick}
       >
@@ -55,7 +55,7 @@ const NotificationSlider = () => {
         {sliderData.map((item, index) => (
           <div
             key={index}
-            className="text-[8px] leading-[12px] tracking-[0.02em] md:font-semibold md:text-[14px] md:leading-[21px] md:tracking-[0.02em]"
+            className="text-[8px] leading-[12px] tracking-[0.02em] lg:font-semibold lg:text-[14px] lg:leading-[21px] lg:tracking-[0.02em]"
           >
             {item.text}
           </div>

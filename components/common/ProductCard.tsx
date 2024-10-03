@@ -20,9 +20,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   discount,
 }) => {
   return (
-    <div className="w-[180px] md:w-[230px] flex-shrink-0 mx-2 bg-white rounded-lg p-4 relative">
+    <div className="w-[180px] lg:w-[230px] flex-shrink-0 mx-2 bg-white rounded-lg p-4 relative">
       {discount && (
-        <div className="absolute top-2 left-2 font-bold md:font-normal text-black-300 bg-yellow-50 p-2 px-4 rounded-md text-[12px] md:text-[16px]">
+        <div className="absolute top-2 left-2 font-bold lg:font-normal text-black-300 bg-yellow-50 p-2 px-4 rounded-md text-[12px] lg:text-[16px]">
           {discount}
           <span className="flex justify-end font-normal text-black-300">
             off
@@ -46,11 +46,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
         ))}
       </div>
 
-      <h3 className="text-center text-[10px] md:text-[16px] font-bold text-black-300 mt-3 mb-3 opacity-[80%]">
+      <h3 className="text-center text-[10px] lg:text-[16px] font-bold text-black-300 mt-3 mb-3 opacity-[80%]">
         {title}
       </h3>
 
-      <div className="text-center text-[10px] md:text-[16px] font-bold text-black-300">
+      <div className="text-center text-[10px] lg:text-[16px] font-bold text-black-300">
         {price} -{" "}
         <span className="line-through font-normal text-black-300 opacity-[80%]">
           {oldPrice}

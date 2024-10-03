@@ -55,7 +55,7 @@ const PetSlider = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center px-10 md:px-64 text-[#112025] mt-10 mb-6">
+      <div className="flex justify-between items-center px-10 lg:px-64 text-[#112025] mt-10 mb-6">
         <div>
           <p className="text-2xl font-semibold">Everything Your</p>
           <p className="text-3xl font-bold text-[#16BAC6]">Pet Needs</p>
@@ -75,7 +75,7 @@ const PetSlider = () => {
           {sliderData.map((item, index) => (
             <div key={index} className="relative">
               <div
-                className={`w-full h-[300px] md:h-[500px] overflow-hidden rounded-lg transition-transform duration-500 transform ${
+                className={`w-full h-[300px] lg:h-[500px] overflow-hidden rounded-lg transition-transform duration-500 transform ${
                   index === activeSlide ? "scale-105" : "scale-90 blur-[2px]"
                 }`}
                 style={{
